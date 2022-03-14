@@ -1,0 +1,32 @@
+1.
+Для практикума из 7-го занятия функцию замыкания можно применить для вывода счета, а также для генерации препятствий и корма.
+2.
+if (!("a" in window)) {
+    var a = 1;
+}
+alert(a);
+Функция выведет undefinded
+
+var b = function a(x) {
+    x && a(--x);
+};
+alert(a);
+function a(x) {
+    return x * 2;
+}
+var a;
+alert(a);
+Функция выведет x*2
+
+function b(x, y, a) {
+    arguments[2] = 10;
+    alert(a);
+}
+b(1, 2, 3);
+функция выведет 10, потому что     arguments[2] =     arguments[a] =10
+
+function a() {
+    alert(this);
+}
+a.call(null);
+Функция выведет объект a
